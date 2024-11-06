@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Henriksen - Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span id="logo">Alexander Henriksen</span>
+            <ul>
+                <li class="nav-item">Home</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Projects</li>
+                <li class="nav-item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Creating <br> custom and beautiful <br> web solutions!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo perferendis, iure ad quisquam officiis iusto.</p>
+            </div>
+            <div class="hero-vid">
+                <img src="../assets/img/hero.jpg" alt="Video of Alexander Henriksen Work">
+            </div>
+        </div>
+
+        <div class="projects">
+            <h2>My Work</h2>
+            <div class="word-scroller">
+                <div class="ticker">
+                    <div class="ticker__list">
+                    <div class="ticker__item"><p>web development 🌐</p></div>
+                    <div class="ticker__item"><p>landing pages 🌠</p></div>
+                    <div class="ticker__item"><p>web design 🖌️</p></div>
+                    <div class="ticker__item"><p>conversion rates 📈</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-items">
+                <div class="project-item"><img src="../assets/img/hero.jpg" alt="" class="item-img">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, veniam.</p>
+                </div>
+                <div class="project-item"><img src="../assets/img/hero.jpg" alt="" class="item-img">
+                    <h3>Project 2</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, magnam.</p>
+                </div>
+            </div>
+        </div> <!--add a see more part using js when there are more than three projects!-->
+        <div class="about">
+            <h2>About Me</h2>
+            <hr />
+            <div class="about-container">
+            <img src="../assets/img/hero.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatem sunt autem vero, dolor maxime ut. Dolorem iusto cupiditate veniam quidem inventore labore! Quibusdam assumenda consequuntur iste modi est illum, nulla ducimus magni ad qui blanditiis nam eos numquam dolor.</p>
+            </div>
+            
+            <div class="social-icons">
+                <ul>
+                    <li><a href="" target="_blank"><img src="../assets/img/linkedin.png" alt="" class="icon"></a></li>
+                    <li><a href="" target="_blank"><img src="../assets/img/twitter.png" alt="" class="icon"></a></li>
+                </ul>
+            </div>
+        </div>
+         <div class="contact">
+            <span class="contact-header">Contact me!</span>
+            <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" id="contact-form-id" method="POST">
+                <input type="hidden" name="access_key" value="6636a775-deea-446f-8fb9-9f9a564e4065"> <!-- change this to public key with clients email -->
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Description"></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit" class="submit-btn">Send me your message!</button>
+            </form>
+            </div>
+         </div>
+    </main>
+    <footer>
+        <p>Name: Alex Henriksen</p>
+        <p>Email: alexanderthenriksen@gmail.com</p>
+        <p>Phone: +45 81959493</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
