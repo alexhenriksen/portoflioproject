@@ -111,6 +111,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
     align-items: center;
     margin-bottom: 5%;
     border-radius: 20px;
@@ -148,6 +149,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
 
 .social-icons ul li {
@@ -162,8 +164,8 @@ nav ul {
 }
 
 .social-icons ul li a img {
-    height: 12vw;
-    width: 12vw;
+    max-height: 12vh;
+    max-width: 12vw;
 }
 
 .social-icons ul {
@@ -290,75 +292,11 @@ footer p {
     }
 }
 
-@media  screen and (min-width: 1024px) {
-    p {
-        font-size: 2.5vw;
-    }
-
+@media screen and (min-width: 1024px) {
     nav {
         justify-content: space-between;
     }
-
     nav ul {
         display: flex;
     }
-
-    .hero-text {
-        font-size: 3vw;
-        text-align: center;
-        margin-bottom: 5%;
-    }
-    
-    .projects h2 {
-        font-size: 4vw;
-        margin-bottom: 6%;
-    }
-    
-    .ticker {
-        display: none;
-    
-    }
-    .project-items {
-        flex-direction: row;
-    }
-
-    .project-item {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 0;
-    }
-    
-    
-    .project-item h3, p{
-        font-size: 2.8vw;
-        margin: 4pt;
-    }
-    
-
-    .social-icons ul li a img {
-        height: 8vw;
-        width: 8vw;
-    }
-    
-    .contact-header {
-        margin-top: 10%;
-        font-size: 4vw;
-    }
-
-    .about h2 {
-        font-size: 4vw;
-    }
-
-    .about p {
-        font-size: 3vw;
-    }
-    
-    .submit-btn {
-        font-size: 3vw;
-    }
-    
-    footer {
-        font-size: 3vw;
-    }
-
 }
